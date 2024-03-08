@@ -1,3 +1,4 @@
+import { Card } from "./components/Card";
 import { Estilos } from "./components/EstilosGlobais/Estilos";
 
 
@@ -5,7 +6,9 @@ function App() {
   return (
     <div>
       <Estilos />
-      <h1>Freelando</h1>
+      <Card>
+        <h1>Freelando</h1>
+      </Card>
     </div>
   );
 }
