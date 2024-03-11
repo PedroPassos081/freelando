@@ -1,3 +1,4 @@
+import CampoTexto from "./components/CampoTexto";
 import { Card } from "./components/Card";
 import { Estilos } from "./components/EstilosGlobais/Estilos";
 import ProvedorTema from "./components/ProvedorTema";
@@ -15,6 +16,7 @@ function App() {
         <Tipografia variante='body' component='body'>
           Crie seu perfil gratuitamente para começar a trabalhar com os melhores freelancers. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho.
         </Tipografia>
+        <CampoTexto titulo='Nome Completo' />
       </Card>
     </ProvedorTema >
   );
