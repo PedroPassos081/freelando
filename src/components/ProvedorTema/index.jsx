@@ -1,6 +1,8 @@
 import { ThemeProvider } from '@emotion/react'
 
 const tema = {
+    fontFamily:
+        "'Montserrat', sans-serif",
     cores: {
         branco: '',
         atencao: '',
