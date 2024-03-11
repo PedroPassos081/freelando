@@ -1,7 +1,9 @@
+import Cabecalho from "./components/Cabecalho";
 import CampoTexto from "./components/CampoTexto";
 import { Card } from "./components/Card";
 import { Estilos } from "./components/EstilosGlobais/Estilos";
 import ProvedorTema from "./components/ProvedorTema";
+import Rodape from "./components/Rodape";
 import Tipografia from "./components/Tipografia";
 
 
@@ -9,6 +11,7 @@ function App() {
   return (
     <ProvedorTema>
       <Estilos />
+      <Cabecalho />
       <Card>
         <Tipografia variante='h1' componente='h1'>
           freelando
@@ -18,6 +21,7 @@ function App() {
         </Tipografia>
         <CampoTexto titulo='Nome Completo' />
       </Card>
+      <Rodape />
     </ProvedorTema >
   );
 }
