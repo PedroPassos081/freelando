@@ -12,6 +12,7 @@ function App() {
   return (
     <ProvedorTema>
       <Estilos />
+      <Cabecalho />
       <Container>
         <Row justify="center">
           <Col lg={6}>
@@ -26,8 +27,6 @@ function App() {
             </Card>
           </Col>
         </Row>
-        <Cabecalho />
-
         <Rodape />
       </Container>
     </ProvedorTema >
