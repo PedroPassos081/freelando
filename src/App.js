@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-grid-system";
 import Cabecalho from "./components/Cabecalho";
 import CampoTexto from "./components/CampoTexto";
-import { Card } from "./components/Card";
+import Card from "./components/Card";
 import { Estilos } from "./components/EstilosGlobais/Estilos";
 import ProvedorTema from "./components/ProvedorTema";
 import Rodape from "./components/Rodape";
@@ -16,7 +16,7 @@ function App() {
       <Container>
         <Row justify="center">
           <Col lg={6}>
-            <Card>
+            <Card >
               <Tipografia variante='h1' componente='h1'>
                 freelando
               </Tipografia>
