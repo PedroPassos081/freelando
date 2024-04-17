@@ -7,14 +7,27 @@ import ProvedorTema from "./components/ProvedorTema";
 import Rodape from "./components/Rodape";
 import Tipografia from "./components/Tipografia";
 import Botao from "./components/Botao";
+import { FreelandoLogo } from "./components/FreelandoLogo/Icones";
+import { Link } from "./components/Link";
 
 
 function App() {
   return (
     <ProvedorTema>
       <Estilos />
-      <Cabecalho />
-      <Container>
+      <Cabecalho>
+        <Container>
+          <Row align="center">
+            <Col>
+              <FreelandoLogo />
+            </Col>
+            <Col style={{ textAlign: 'right' }}>
+              <Link >Login</Link>
+            </Col>
+          </Row>
+        </Container>
+      </Cabecalho>
+      <Container style={{ margin: '80px 0' }}>
         <Row justify="center">
           <Col lg={6} md={8} sm={12}>
             <Card >
@@ -67,7 +80,7 @@ function App() {
             </Card>
           </Col>
         </Row>
-        <Rodape />
+
       </Container>
     </ProvedorTema >
   );
