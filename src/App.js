@@ -9,6 +9,13 @@ import Tipografia from "./components/Tipografia";
 import Botao from "./components/Botao";
 import { FreelandoLogo } from "./components/FreelandoLogo/Icones";
 import { Link } from "./components/Link";
+import { ListaInline } from "./components/ListaInline";
+import { ItemListaInline } from "./components/ItemListaInline";
+
+import { IconeInstagram } from "./components/Icones/IconeInstagram";
+import { IconeTwitch } from "./components/Icones/IconeTwitch";
+import { IconeTwitter } from "./components/Icones/IconeTwitter";
+import { IconeWhatsApp } from "./components/Icones/IconeWhatsApp";
 
 
 function App() {
@@ -80,7 +87,41 @@ function App() {
             </Card>
           </Col>
         </Row>
-
+        <Rodape>
+          <Container>
+            <Row align="center">
+              <Col>
+                <FreelandoLogo height={40} width={176} />
+                <Tipografia variante="legenda" componente="legenda">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</Tipografia>
+              </Col>
+              <Col style={{ textAlign: 'right' }}>
+                <Tipografia variante="legenda" componente="legenda">Acesse nossas redes:</Tipografia>
+                <ListaInline >
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para o WhatsApp">
+                      <IconeWhatsApp />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Twitch">
+                      <IconeTwitch />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Instagram">
+                      <IconeInstagram />
+                    </a>
+                  </ItemListaInline>
+                  <ItemListaInline>
+                    <a href="/" aria-label="Link para a Twitter">
+                      <IconeTwitter />
+                    </a>
+                  </ItemListaInline>
+                </ListaInline>
+              </Col>
+            </Row>
+          </Container>
+        </Rodape>
       </Container>
     </ProvedorTema >
   );
