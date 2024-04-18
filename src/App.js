@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-grid-system";
 import Cabecalho from "./components/Cabecalho";
 import CampoTexto from "./components/CampoTexto";
 import Card from "./components/Card";
-import { Estilos } from "./components/EstilosGlobais/Estilos";
+import { Estilos } from "./components/EstilosGlobais/index";
 import ProvedorTema from "./components/ProvedorTema";
 import Rodape from "./components/Rodape";
 import Tipografia from "./components/Tipografia";
